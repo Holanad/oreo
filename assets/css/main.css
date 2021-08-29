@@ -1,0 +1,425 @@
+@font-face {
+  font-family: "BebasNeueBook";
+  src: url("../fonts/BebasNeueBook.woff") format("woff"), url("../fonts/BebasNeueBook.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "RoxboroughCF-Light";
+  src: url("../fonts/RoxboroughCF-Light.woff") format("woff"), url("../fonts/RoxboroughCF-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+
+body, html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-size: 15px;
+  min-width: 320px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+textarea {
+  resize: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoratio {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+p, nav {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active {
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+}
+
+input {
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 120px;
+  width: 1440px;
+}
+
+h1 {
+  font-family: "RoxboroughCF-Light";
+  font-size: 96px;
+  line-height: 80px;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "RoxboroughCF-Light";
+  font-size: 64px;
+  line-height: 80px;
+  color: #0E253A;
+  font-weight: normal;
+}
+
+a, p, input, button, span {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: #0E253A;
+}
+
+.header {
+  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
+          box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
+}
+
+.header-container {
+  padding: 8px 120px 29px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-container .header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .header-navigation nav {
+  margin-top: 16px;
+  margin-left: 96px;
+}
+
+.header-container .header-navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-container .header-navigation nav ul li {
+  margin-right: 50px;
+}
+
+.header-container .header-navigation nav ul li:last-child {
+  margin-right: 0;
+}
+
+.header-container .header-navigation nav ul li a {
+  font-family: "BebasNeueRegular";
+  font-size: 20px;
+  line-height: 20px;
+  color: #0E253A;
+}
+
+.header-container .header-navigation nav ul li a:hover {
+  color: #FFF766;
+}
+
+.header-container .header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+.header-container .header-contact img {
+  margin-left: 24px;
+}
+
+.header-container .header-contact button {
+  font-family: "BebasNeueRegular";
+  font-size: 20px;
+  line-height: 30px;
+  color: #0E253A;
+  border: 2px solid #0E253A;
+  padding: 0 33px;
+  margin-left: 25px;
+}
+
+.main {
+  background: #0E253A;
+  /* Old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#0E253A), color-stop(35%, #0E253A), color-stop(0%, #ffffff));
+  background: linear-gradient(to right, #0E253A 0%, #0E253A 35%, #ffffff 0%);
+  position: relative;
+}
+
+.main-background {
+  width: 1000px;
+  height: 640px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.main-background img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-wrapper .main-info {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 140px;
+  padding-bottom: 160px;
+}
+
+.main-wrapper .main-info span {
+  font-family: "BebasNeueRegular";
+  font-size: 24px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+
+.main-wrapper .main-info h1 {
+  text-align: right;
+}
+
+.main-wrapper .main-description {
+  padding-top: 20px;
+}
+
+.main-wrapper .main-description::before {
+  content: '';
+  width: 240px;
+  height: 1px;
+  background: #FFF766;
+  position: absolute;
+  left: 0;
+}
+
+.main-wrapper .main-description p {
+  position: relative;
+  z-index: 1;
+  font-family: "RoxboroughCF-Light";
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  max-width: 320px;
+  padding-bottom: 90px;
+}
+
+.motto {
+  padding: 220px 0 240px 0;
+}
+
+.motto-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.motto-wrapper .motto-item {
+  width: 350px;
+  height: 350px;
+  display: block;
+  margin-top: 40px;
+}
+
+.motto-wrapper .motto-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */
